@@ -1,0 +1,8 @@
+<div class="hijo">
+    <h2>Menú nuevo</h2>
+    <p>El menú de hoy es: <strong>{{propiedadHijo}}</strong></p>
+    <label for="menu-input">Ingresa menú:</label>
+    <input type="text" id="menu-input" #nuevoMenu>
+    <button (click)="metodoMenu(nuevoMenu.value)">Ingresar</button>
+
+</div>

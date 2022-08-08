@@ -1,0 +1,12 @@
+
+<div class="padre">
+  <h2>Menú principal</h2>
+  <ul>
+    <li *ngFor="let men of menus">{{men}}</li>
+  </ul>
+  <app-decorator [propiedadHijo]="propiedadPadre" (eventoMenu)="anadirMenus($event)"></app-decorator>
+
+
+</div>
+
+<router-outlet></router-outlet>
